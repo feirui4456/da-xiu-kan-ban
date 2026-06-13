@@ -481,10 +481,10 @@
                 
                 if (today < lineStart) {
                     const daysToStart = Math.ceil((lineStart - today) / (1000 * 60 * 60 * 24));
-                    statusText = `<b>大修状态：</b>距大修开始还剩 <span class="highlight-waiting">${daysToStart}</span> Tian`;
+                    statusText = `<b>大修状态：</b>距大修开始还剩 <span class="highlight-waiting">${daysToStart}</span> 天`;
                 } else if (today >= lineStart && today <= lineEnd) {
                     const daysToEnd = Math.ceil((lineEnd - today) / (1000 * 60 * 60 * 24));
-                    statusText = `<b>大修状态：</b>距大修结束还剩 <span class="highlight-remaining">${daysToEnd}</span> Tian`;
+                    statusText = `<b>大修状态：</b>距大修结束还剩 <span class="highlight-remaining">${daysToEnd}</span> 天`;
                 } else {
                     statusText = `<b>大修状态：</b><span style="color: var(--primary-color);">大修已顺利圆满结束</span>`;
                 }
